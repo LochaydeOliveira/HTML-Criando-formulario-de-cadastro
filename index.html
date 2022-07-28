@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarefa - Formulário de Evento</title>
+</head>
+<body>
+    
+    <form style="border-radius: 30px;border-color: #0000ff;border-style: solid;border-width: 2px;   background-color:#f7fafe;width: 550px;position: absolute;display: flex;margin: 0px 0 0px 500px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align: center;flex-direction: column;">
+
+        <header style="text-align: center; background-color: #0000ff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: #ffffff;border-radius: 30px;width: 560px;margin: -5px 0 0 -5px;"> 
+            <div>
+                <img src="img/channels4_profile.jpg" alt="logo escola Kenzie Academy" style="height: 100px;width: 100px;margin-bottom: -30px;">
+            </div>
+            <hr>
+            <h1>Participe do Evento TecnoFuture da Kenzie Academy</h1>       
+        </header>
+
+        <div 
+        style="display: block;width: 200px;text-align: left;margin: 0 0 30px 190px; font-family: sans-serif;">
+        <H3>CADASTRE-SE AQUI</H3>
+
+        <label 
+        for="nome" 
+        style="font-size: 12px;"
+        >Nome Completo*
+        </label>        
+        <input 
+        style="width: 180px;" type="text" id="nome" name="nome" placeholder="Digite seu nome..." required/>        
+
+        <label 
+        for="email"
+        style="font-size: 12px;">
+        E-mail*
+        </label>
+        <input 
+        style="width: 180px;" 
+        type="email" id="email" 
+        name="email" 
+        placeholder="Digite seu e-mail..." 
+        required/>
+        </div>
+
+        <div style="background-color: #0000ff;color: #ffffff;border-radius: 30px;height: 60px;">
+        <h2>
+            Por que deseja participar do TecnoFuture?
+        </h2>
+        </div>
+
+       <label 
+       style="font-size: 12px;margin-top: 10px;" 
+       for="depoimento">
+       Depoimento
+        </label>
+       
+       <textarea 
+       style="width: 500px;margin: 0 0 0 30px;" 
+       id="depoimento" 
+       placeholder="Digite seu depoimento aqui..." 
+       name="depoimento" 
+       cols="20" 
+       rows="5" 
+       required></textarea>
+
+        <div style="display: block;width: 150px; margin: 10px 0 10px 190px;text-align: left;">
+        <label 
+       style="font-size: 12px;" 
+       for="moduloAtual">
+       Em que módulo você está?
+        </label>
+        <select style="width: 170px;" 
+        name="moduloAtual" 
+        id="moduloAtual">
+        <option value="modulo1">Módulo 1</option>
+        <option value="modulo2">Módulo 2</option>
+        <option value="modulo3">Módulo 3</option>
+        <option value="modulo4">Módulo 4</option>
+        <option value="modulo5">Módulo 5</option>
+        <option value="modulo6">Módulo 6</option>
+        </select>
+        <label 
+       style="font-size: 12px;" 
+       for="senha">
+       Cadastre uma senha*
+        </label>
+        <input placeholder="Digite a senha aqui..." type="password" name="senha" id="senha" required>
+        <label 
+       style="font-size: 12px;" 
+       for="confirmarSenha">
+       Confirmar senha*
+        </label>
+        <input placeholder="Digite a senha novamente..." type="password" name="confirmarSenha" id="confirmarSenha" required>
+        </div>
+        
+        <div style="display: block;width: 500px;text-align: center;margin: 0 0 0px 30px;">
+         <p style="background-color: #0000ff;color: #ffffff;padding-top: 5px;padding-bottom: 5px">Deseja receber nossas novidades em seu e-mail?</p>
+            <label for="sim">Sim</label>
+            <input type="radio" required name="receberNovidades" value="sim"/>
+
+            <label for="nao">Não</label>
+            <input type="radio" required name="receberNovidades" value="nao"/> 
+            <br>
+            <div style="margin: 10px 0 15px 0px;">        
+            <button style="background-color: #1cf04e;color: #000000;font-weight: 600;width: 150px;border-radius: 10px;border-width: 1px;border-color: rgb(9, 116, 21);padding-top: 5px;padding-bottom: 5px;    box-shadow: 0 0 4px #00000080;" type="submit">Enviar</button>
+            </div>
+            </div>
+            
+    </form>
+</body>
+</html>
